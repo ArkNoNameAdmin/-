@@ -33,17 +33,27 @@
 </nav>
 <!--내용-->
     <div class="d-grid gap-2 col-6 mx-auto" style="margin-top: 30px;">
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27015'">라그 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27017'">아일 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27019'">센터 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27021'">익스 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27023'">에버 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27025'">제네1 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27027'">제네2 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27029'">발게로 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27031'">크리스탈아일 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27033'">피요르두르 접속</button>
-      <button class="btn btn-primary" type="button" onclick="window.location.href = 'steam://connect/1.251.126.172:27035'">로스트아일 접속</button>
+      <script>
+        var ipAddress = '1.251.126.29';
+      
+        function connectToServer(port) {
+          var steamUrl = 'steam://connect/' + ipAddress + ':' + port;
+          window.location.href = steamUrl;
+        }
+      </script>
+      
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27015)">라그 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27017)">아일 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27019)">센터 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27021)">익스 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27023)">에버 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27025)">제네1 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27027)">제네2 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27029)">발게로 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27031)">크리스탈아일 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27033)">피요르두르 접속</button>
+      <button class="btn btn-primary" type="button" onclick="connectToServer(27035)">로스트아일 접속</button>
+      
 </div>
 
   <!--bottom-->
